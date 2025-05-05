@@ -6,7 +6,7 @@ from token_encoder.encode import get_token_length
 
 if __name__ == "__main__":
     parser = SemanticMarkdownParser()
-    input_text = Path("input.md").read_text(encoding="utf-8")
+    input_text = Path("opt3001.md").read_text(encoding="utf-8")
 
     # Parse to tree
     root = parser.parse_markdown_to_tree(input_text)
